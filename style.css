@@ -3,6 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+.backToHome{
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 10%;
+
+    cursor: pointer;
+}
+.disabled{
+    display: none;
+}
+.activedBack{
+    display: block;
+}
 
 img{
     display: block;
@@ -97,6 +110,9 @@ body{
     grid-column: 2;
     overflow-y: scroll;
 }
+.animals-list li{
+    cursor: pointer;
+}
 .animals-list::-webkit-scrollbar{
     width: 18px;
 }
@@ -127,6 +143,8 @@ body{
     margin-top: 2rem;
     margin-bottom: .5rem;
     color: #e54;
+
+    cursor: pointer;
 }
 .faq-list dt::before{
     content: '';
@@ -136,11 +154,19 @@ body{
     margin-right: 10px;
     background: #fb5;
 }
+
+.faq-list dt::after{
+    content: '\21B5';
+    margin-left: 10px;
+}
+
 .faq-list dd{
     font-family: helvetica, arial;
     margin-bottom: .5rem;
     margin-left: 30px;
 }
+
+
 
 .mapa{
     grid-column: 2;
@@ -196,8 +222,47 @@ body{
     }
     .menu{
         margin-top: 0px;
+        grid-column: -1 / 5;
+        
+        
     }
     .copy{
         margin-bottom: 0px;
+    }
+}
+
+.js .js-tabcontent section{
+    display: none;
+}
+
+.js-tabcontent section.ativo{
+    display: block !important;
+    animation: show .5s forwards;
+}
+.js-accordion dd{
+    display: none;
+}
+.js-accordion dd.ativo{
+    display: block;
+    animation: slideDown .8s forwards;
+}
+@keyframes show {
+    from{ /* inicia */
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to{ /* termina */
+        opacity: 1;
+        transform: translate3d(0, 0 ,0)
+    }
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to{
+        opacity: 1;
+        max-height: 200px;
     }
 }
