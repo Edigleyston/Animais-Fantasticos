@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="CSS/style.css">
     <script type="module" defer src="JS/main.js"></script>
     <script>document.documentElement.className += 'js';</script> <!--Deixar conteudo ativo caso browser bloqueie js-->
-    <title>Document</title>
+    <title>Animais Fantástico</title>
 </head>
 <body>
     <div class="backToHome disabled">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVR4nO2WQQqDMBBF/yX+UO9/mELrqi48jt3ERaWUNJmZTGAeCCIqeUbjA5IkSZJPpGxTQwAvADuABZNLHGWbUkYAbEVgu+zLjDOxA7h9ObbMKHEyjQx/SEwjwwqJ8DL8QyKsDBskwsmwQyKMDBUkhstQUWKYjDT8pWujseXe7qtT7VOm9cz0LrFHBBlpfJ16olG0XzONn11rNFJrZrQkegbGXhltiSEyNJJwl3k6fJi91zwqzscdwOqwurTKrGWMamQ0XshojFa+7gVMQ4nQ0RhOho4SZjIjJEJEozYcEY1W0DMaraFHNHohltHojVhEY5IkSZK8AZZJ6J00v19zAAAAAElFTkSuQmCC"
         alt="Setinha para subir pro inicio">
     </div>
-    <nav class="menu js-menu">
+    <nav class="menu" data-menu="suave">
         <ul>
             <li><a href="#animals">Animais</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -25,10 +25,10 @@
         </ul>
     </nav>
     
-    <section class="grid-section animals js-scroll" id="animals">
+    <section class="grid-section animals" data-anime="scroll" id="animals">
         <h1 class="title">Animais Fantásticos</h1>
         
-        <ul class="animals-list js-tabmenu">
+        <ul class="animals-list" data-tab="menu">
             <li><img src="img/imagem1.jpg" alt=""></li>
             <li><img src="img/imagem2.jpg" alt=""></li>
             <li><img src="img/imagem3.jpg" alt=""></li>
@@ -37,38 +37,38 @@
             <li><img src="img/imagem6.jpg" alt=""></li>
         </ul>
 
-        <div class="animals-description js-tabcontent">
-            <section>
+        <div class="animals-description" data-tab="content">
+            <section data-anime="show-right">
                 <h2>Raposa</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
             </section>
-            <section>
+            <section data-anime="show-right">
                 <h2>Esquilo</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
             </section>    
-            <section>
+            <section data-anime="show-right">
                 <h2>Urso</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
             </section>    
-            <section>
+            <section data-anime="show-down">
                 <h2>Lobo</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>Macaco</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>Leão</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
@@ -77,9 +77,9 @@
         </div>
     </section>
 
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq" data-anime="scroll" id="faq">
         <h1 class="title">FAQ</h1>
-        <dl class="faq-list js-accordion"> <!--definition list, pode ser usado para pergunta e resposta-->
+        <dl class="faq-list" data-anime="accordion"> <!--definition list, pode ser usado para pergunta e resposta-->
             <dt><!--pergunta-->Qual a idade dos animais?</dt>
             <dd><!--descrição como resposta-->
                 Lorem ipsum dolor sit amet.
@@ -91,7 +91,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contacts js-scroll" id="contacts">
+    <section class="grid-section contacts" data-anime="scroll" id="contacts">
         <h1 class="title">Contato</h1>
         <div class="mapa">
             <img src="img/mapa.png" alt="">
