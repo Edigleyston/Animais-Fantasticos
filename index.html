@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,102 +12,159 @@
     <script>document.documentElement.className += 'js';</script> <!--Deixar conteudo ativo caso browser bloqueie js-->
     <title>Animais Fantástico</title>
 </head>
+
 <body>
-    <div class="backToHome disabled">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVR4nO2WQQqDMBBF/yX+UO9/mELrqi48jt3ERaWUNJmZTGAeCCIqeUbjA5IkSZJPpGxTQwAvADuABZNLHGWbUkYAbEVgu+zLjDOxA7h9ObbMKHEyjQx/SEwjwwqJ8DL8QyKsDBskwsmwQyKMDBUkhstQUWKYjDT8pWujseXe7qtT7VOm9cz0LrFHBBlpfJ16olG0XzONn11rNFJrZrQkegbGXhltiSEyNJJwl3k6fJi91zwqzscdwOqwurTKrGWMamQ0XshojFa+7gVMQ4nQ0RhOho4SZjIjJEJEozYcEY1W0DMaraFHNHohltHojVhEY5IkSZK8AZZJ6J00v19zAAAAAElFTkSuQmCC"
-        alt="Setinha para subir pro inicio">
+    <div class="grid-container">
+
+        <div class="backToHome disabled">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVR4nO2WQQqDMBBF/yX+UO9/mELrqi48jt3ERaWUNJmZTGAeCCIqeUbjA5IkSZJPpGxTQwAvADuABZNLHGWbUkYAbEVgu+zLjDOxA7h9ObbMKHEyjQx/SEwjwwqJ8DL8QyKsDBskwsmwQyKMDBUkhstQUWKYjDT8pWujseXe7qtT7VOm9cz0LrFHBBlpfJ16olG0XzONn11rNFJrZrQkegbGXhltiSEyNJJwl3k6fJi91zwqzscdwOqwurTKrGWMamQ0XshojFa+7gVMQ4nQ0RhOho4SZjIjJEJEozYcEY1W0DMaraFHNHohltHojVhEY5IkSZK8AZZJ6J00v19zAAAAAElFTkSuQmCC"
+                alt="Setinha para subir pro inicio">
+        </div>
+        <nav class="menu" data-menu="suave">
+            <ul>
+                <li><a href="#animals">Animais</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+                <li><a data-modal="abrir" href="login.html">Login</a></li>
+                <li><a href="https://www.linkedin.com/in/edigleyston-velez/">Dev →</a></li>
+            </ul>
+        </nav>
+
+        <section class="grid-section animals" data-anime="scroll" id="animals">
+            <h1 class="title">Animais Fantásticos</h1>
+
+            <ul class="animals-list" data-tab="menu">
+                <li><img src="img/imagem1.jpg" alt=""></li>
+                <li><img src="img/imagem2.jpg" alt=""></li>
+                <li><img src="img/imagem3.jpg" alt=""></li>
+                <li><img src="img/imagem4.jpg" alt=""></li>
+                <li><img src="img/imagem5.jpg" alt=""></li>
+                <li><img src="img/imagem6.jpg" alt=""></li>
+            </ul>
+
+            <div class="animals-description" data-tab="content">
+                <section data-anime="show-right">
+                    <h2>Raposa</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Esquilo</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Urso</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Lobo</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Macaco</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Leão</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo
+                        dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <section class="grid-section faq" data-anime="scroll" id="faq">
+            <h1 class="title">FAQ</h1>
+            <dl class="faq-list" data-anime="accordion"> <!--definition list, pode ser usado para pergunta e resposta-->
+                <dt><!--pergunta-->Qual a idade dos animais?</dt>
+                <dd><!--descrição como resposta-->
+                    Lorem ipsum dolor sit amet.
+                </dd>
+                <dt>Qual a diferença?</dt>
+                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</dd>
+                <dt>Como proteger?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem!</dd>
+            </dl>
+        </section>
+
+        <section class="grid-section contacts" data-anime="scroll" id="contacts">
+            <h1 class="title">Contato</h1>
+            <div class="mapa" data-tooltip aria-label="Endereço próximo ao Mercadinho de Joanes.">
+                <img src="img/mapa.png" alt="Mapa do endereço para contato.">
+            </div>
+            <ul class="data">
+                <li>edigleystonm@gmail.com</li>
+                <li>+55 (83) 98892-3565</li>
+                <li>Rua Capitão Domingos Cariris, 58</li>
+                <li>Campina Grande, PB</li>
+            </ul>
+        </section>
+
+        <footer class="copy">
+            <p>Todos os direitos reservados.</p>
+        </footer>
     </div>
-    <nav class="menu" data-menu="suave">
-        <ul>
-            <li><a href="#animals">Animais</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contacts">Contatos</a></li>
-            <li><a href="https://www.linkedin.com/in/edigleyston-velez/">Dev →</a></li>
-        </ul>
-    </nav>
+
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label class="modal-label" for="email">Email</label>
+                <input type="text" for="email" id="email">
     
-    <section class="grid-section animals" data-anime="scroll" id="animals">
-        <h1 class="title">Animais Fantásticos</h1>
-        
-        <ul class="animals-list" data-tab="menu">
-            <li><img src="img/imagem1.jpg" alt=""></li>
-            <li><img src="img/imagem2.jpg" alt=""></li>
-            <li><img src="img/imagem3.jpg" alt=""></li>
-            <li><img src="img/imagem4.jpg" alt=""></li>
-            <li><img src="img/imagem5.jpg" alt=""></li>
-            <li><img src="img/imagem6.jpg" alt=""></li>
-        </ul>
+                <label class="modal-label" for="senha">Senha</label>
+                <input type="password" for="senha" id="senha">
 
-        <div class="animals-description" data-tab="content">
-            <section data-anime="show-right">
-                <h2>Raposa</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Esquilo</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-            </section>    
-            <section data-anime="show-right">
-                <h2>Urso</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-            </section>    
-            <section data-anime="show-down">
-                <h2>Lobo</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-            </section>
-            <section data-anime="show-down">
-                <h2>Macaco</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-            </section>
-            <section data-anime="show-down">
-                <h2>Leão</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime incidunt sunt, quaerat nemo dolorum numquam illo cum deleniti modi reprehenderit maiores dolor exercitationem eum laborum?</p>
-            </section>
+                <button type="submit">Entrar</button>
+    
+            </form>
         </div>
     </section>
-
-    <section class="grid-section faq" data-anime="scroll" id="faq">
-        <h1 class="title">FAQ</h1>
-        <dl class="faq-list" data-anime="accordion"> <!--definition list, pode ser usado para pergunta e resposta-->
-            <dt><!--pergunta-->Qual a idade dos animais?</dt>
-            <dd><!--descrição como resposta-->
-                Lorem ipsum dolor sit amet.
-            </dd>
-            <dt>Qual a diferença?</dt>
-            <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</dd>
-            <dt>Como proteger?</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem!</dd>
-        </dl>
-    </section>
-
-    <section class="grid-section contacts" data-anime="scroll" id="contacts">
-        <h1 class="title">Contato</h1>
-        <div class="mapa">
-            <img src="img/mapa.png" alt="">
-        </div>
-        <ul class="data">
-            <li>edigleystonm@gmail.com</li>
-            <li>+55 (83) 98892-3565</li>
-            <li>Rua Capitão Domingos Cariris, 58</li>
-            <li>Campina Grande, PB</li>
-        </ul>
-    </section>
-
-
-    <footer class="copy">
-        <p>Todos os direitos reservados.</p>
-    </footer>
 </body>
+
 </html>
