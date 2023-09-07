@@ -12,13 +12,35 @@ tooltips.forEach((item) => {
 function onMouseOver (event){
     const tooltipBox = createTooltipBox(this)
 
-    /* Aqui está pegando o valor de pageY e pageX de onde está o mouse
-    e atribuindo ao style do tooltipBox. Fará com que apareça em cima do mouse. */
-    tooltipBox.style.top = event.pageY + 'px'  //como o valor que irá puxar é do tipo float, tem que somar com pixel
-    tooltipBox.style.left = event.pageX + 'px'
+    this.addEventListener('mousemove', onMouseMove) //o evento mouseMove como diz o nome, é ativado quando o mouse se mover dentro do target. No objeto é declarado para seguir o cursor.
+    onMouseMove.tooltipBox = tooltipBox
+    
+    onMouseLeave.tooltipBox = tooltipBox //atribuindo ao tooltipBox do objeto onMouseLeave a constante de dentro desta função
+    this.addEventListener('mouseleave', onMouseLeave) //o evento mouseleave como diz o nome, é ativado quando o mouse sair do alvo
+    onMouseLeave.element=this;
 
-    console.log(event)
+    //console.log(event)
 }
+
+const onMouseLeave = {
+    
+    handleEvent(){
+        this.tooltipBox.remove(); //removendo o elemento div criado na função onMouseOver
+        this.element.removeEventListener('mouseleave', onMouseLeave)// removendo o evento para nao aparecer na barra de ferramentass do desenvolvedor
+       // this.element.removeEventListener('mousemove', onMouseMove)      
+    }
+}
+const onMouseMove = {
+    tooltipBox : '',
+    handleEvent(event) {
+        /* Aqui está pegando o valor de pageY e pageX de onde está o mouse
+        e atribuindo ao style do tooltipBox. Fará com que apareça em cima do mouse. */
+        this.tooltipBox.style.top = event.pageY + 20 + 'px'  //como o valor que irá puxar é do tipo float, tem que somar com pixel
+        this.tooltipBox.style.left = event.pageX + 20 + 'px'
+    }
+ }
+
+
 
 function createTooltipBox(element){
     const tooltipBox = document.createElement('div') //criando um elemento div
