@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="ptbr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <script type="module" defer src="JS/main.js"></script>
     <script>document.documentElement.className += 'js';</script> <!--Deixar conteudo ativo caso browser bloqueie js-->
-    <title>Animais Fantástico</title>
+    <title>Animais Fantásticos</title>
 </head>
 
 <body>
@@ -21,7 +21,9 @@
                 alt="Setinha para subir pro inicio">
         </div>
         <nav class="menu" data-menu="suave">
-            <ul>
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            
+            <ul data-menu="list" id="menu">
                 <li><a href="#animals">Animais</a></li>
                 <li data-dropdown>
                     <a href="about">Sobre</a>
@@ -34,7 +36,7 @@
                 </li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contacts">Contatos</a></li>
-                <li><a data-modal="abrir" href="login.html">Login</a></li>
+                <li><a data-modal="abrir" href="null">Login</a></li>
                 <li><a href="https://www.linkedin.com/in/edigleyston-velez/">Dev →</a></li>
             </ul>
         </nav>
@@ -162,15 +164,15 @@
     <section class="modal-container" data-modal="container">
         <div class="modal">
             <button data-modal="fechar" class="fechar">X</button>
-            <form action="">
+            <form name="login" id="login">
                 <label class="modal-label" for="email">Email</label>
-                <input type="text" for="email" id="email">
-    
+                <input type="email" name="email" for="email" id="email" placeholder="seuemail@dominio.com" required>
+                <span class="erro"></span>
                 <label class="modal-label" for="senha">Senha</label>
-                <input type="password" for="senha" id="senha">
+                <input type="password" for="senha" id="senha" required>
+                <span class="erro2"></span>
 
                 <button type="submit" class="botao">Entrar</button>
-    
             </form>
         </div>
     </section>
